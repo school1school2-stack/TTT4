@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الكفايات اللغوية (أول ثانوي - نموذج ج) - ثانوية الأمير عبدالمجيد</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 8mm 10mm 8mm 10mm;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body {
+            height: 100%; margin: 0; padding: 0;
+            background-color: #f3f4f6;
+            font-family: 'Cairo', 'Tahoma', Arial, sans-serif;
+            color: #000000;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        .page {
+            width: 210mm; height: 297mm; max-width: 100%;
+            margin: 0 auto; background: #ffffff;
+            padding: 10mm; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex; flex-direction: column; justify-content: space-between;
+            page-break-after: always; page-break-inside: avoid;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #065f46, #047857);
+            color: #ffffff; padding: 10px 14px; border-radius: 6px; text-align: center;
+        }
+        .header-banner h1 { margin: 0 0 4px 0; font-size: 13pt; font-weight: bold; }
+        .header-banner p { margin: 0; font-size: 9.5pt; color: #d1fae5; }
+        .info-table {
+            width: 100%; border-collapse: collapse; background: #fef3c7;
+            border: 1px solid #f59e0b; border-radius: 6px; margin-top: 6px; font-size: 10pt;
+        }
+        .info-table.p2 { background: #d1fae5; border-color: #059669; }
+        .info-table td { padding: 6px 10px; border: 1px solid #fde68a; }
+        .info-table.p2 td { border-color: #a7f3d0; }
+        .info-table td span.line { border-bottom: 1px dotted #b45309; display: inline-block; width: 70%; }
+        .info-table.p2 td span.line { border-bottom-color: #047857; }
+        .section-title {
+            background: #fef3c7; color: #9a3412; font-weight: bold;
+            padding: 6px 10px; border-radius: 5px; margin-top: 6px;
+            font-size: 10.5pt; text-align: center; border: 1px solid #f59e0b;
+        }
+        .section-title.p2 { background: #d1fae5; color: #065f46; border-color: #059669; }
+        .content-area { flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; margin-top: 6px; }
+        .two-columns { display: flex; gap: 10px; height: 100%; }
+        .column { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .q-box {
+            background: #ffffff; border: 1.5px solid #d1d5db; border-radius: 6px;
+            padding: 6px 8px; display: flex; flex-direction: column; justify-content: center;
+        }
+        .q-title { font-weight: bold; color: #000000; margin-bottom: 4px; font-size: 9.5pt; line-height: 1.25; }
+        .options { display: flex; flex-direction: column; gap: 3px; font-size: 9pt; color: #000000; }
+        .option-item { display: flex; align-items: center; gap: 6px; }
+        .circle-choice {
+            width: 12px; height: 12px; border: 1.5px solid #000000;
+            border-radius: 50%; display: inline-block; flex-shrink: 0; background-color: #fff;
+        }
+        .bubble-card { background: #ffffff; border: 2px solid #059669; border-radius: 6px; padding: 6px 10px; margin-top: 4px; }
+        .bubble-table { width: 100%; border-collapse: collapse; font-size: 8.5pt; text-align: center; }
+        .bubble-table th { background: #d1fae5; color: #065f46; border: 1.5px solid #059669; padding: 3px 2px; font-weight: bold; }
+        .bubble-table td { border: 1px solid #6ee7b7; padding: 3px 2px; font-weight: bold; }
+        .bubble { width: 13px; height: 13px; border: 1.5px solid #000000; border-radius: 50%; display: inline-block; background-color: #fff; }
+        .footer-bar { text-align: center; font-size: 8.5pt; color: #065f46; padding: 4px 0 0 0; border-top: 1px solid #e5e7eb; margin-top: 4px; }
+        
+        .print-btn-container {
+            position: fixed; bottom: 20px; left: 20px; z-index: 1000;
+        }
+        .print-btn {
+            background-color: #059669; color: white; border: none; padding: 12px 20px;
+            border-radius: 8px; font-size: 14pt; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            font-family: 'Cairo', sans-serif; font-weight: bold;
+        }
+        .print-btn:hover { background-color: #047857; }
+
+        @media print {
+            body { background-color: #fff !important; }
+            .page { box-shadow: none; margin: 0; width: 100%; height: 281mm; }
+            .print-btn-container { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="print-btn-container">
+        <button class="print-btn" onclick="window.print()">🖨️ طباعة النموذج الثالث</button>
+    </div>
+
+    <!-- الصفحة الأولى - نموذج (ج) -->
+    <div class="page">
+        <div>
+            <div class="header-banner">
+                <h1>المملكة العربية السعودية | وزارة التعليم | ثانوية الأمير عبدالمجيد 🏫</h1>
+                <p>المادة: الكفايات اللغوية (أول ثانوي) | <strong>ورقة أسئلة الطالب (نموذج ج)</strong></p>
+            </div>
+            <table class="info-table">
+                <tr>
+                    <td style="width: 55%;"><strong>اسم الطالب:</strong> <span class="line">&nbsp;</span></td>
+                    <td style="width: 45%;"><strong>الصف والشعبة:</strong> <span class="line">&nbsp;</span></td>
+                </tr>
+            </table>
+            <div class="section-title">الصفحة الأولى: الأسئلة من 1 إلى 12 (اختر الإجابة الصحيحة)</div>
+        </div>
+
+        <div class="content-area">
+            <div class="two-columns">
+                <div class="column">
+                    <div class="q-box">
+                        <div class="q-title">1. الجملة المشتملة على حرف ناسخ هي:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) أصبح الجوُّ جميلاً</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) إنَّ العلمَ نورٌ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) كان الطالبُ نشيطاً</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) صار الماءُ ثلجاً</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">2. علامة جزم الفعل المضارع معتل الآخر بـ (لم) هي:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) حذف حرف العلة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) ثبوت النون</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) السكون الظاهر</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) الفتحة المقدرة</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">3. إعراب كلمة "مجتهدٌ" في جملة "الطالبُ مجتهدٌ":</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) مبتدأ مؤخر</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) مفعول به منصوب</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) خبر مفرد مرفوع بالضمة</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) فاعل مرفوع بالضمة</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">4. الجملة المبنية للمجهول بشكل صحيح هي:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) شُرِحَ الدرسُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) شَرَحَ المعلمُ الدرسَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) يُشْرَحُ المعلمُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) شُرِحَ الدرسَ</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">5. الفعل المضارع "ينجحَ" في جملة "اجتهدْ كي تنجحَ" هو:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) مبني على الفتح</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) منصوب وعلامة نصبه الفتحة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) مرفوع بالضمة</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) مجزوم بالسكون</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">6. أي الأداة التالية تجزم الفعل المضارع؟</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) كي</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) لن</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) لم</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) لعلّ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="q-box">
+                        <div class="q-title">7. نائب الفاعل في جملة "كُوفِئَ المتفوقُ" مرفوع وعلامة رفعه:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) الفتحة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) ثبوت النون</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) الضمة الظاهرة</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) الألف</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">8. جملة "كان الطالبُ نشيطاً"، كلمة "نشيطاً" تعرب:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) خبر كان منصوب بالفتحة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) حال منصوبة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) اسم كان مرفوع</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) مفعول به</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">9. الفعل المضارع "يهملوا" في جملة "لم يهملوا":</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) منصوب بالفتحة</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) مجزوم بحذف النون</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) مرفوع بثبوت النون</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) مجزوم بالسكون</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">10. الأداة "لن" تؤثر في الفعل المضارع بـ:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) النصب</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) الجزم</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) الرفع</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) الجر</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">11. الفاعل في جملة "قرأَ الطالبُ الكتابَ" هو:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) قرأَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) الكتابَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) الطالبُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) ضمير مستتر</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">12. عند بناء الفعل "كَتَبَ" للمجهول يطابق الضبط فيصبح:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) يُكْتَبُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) كُتِبَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) أُكْتِبَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) كَاتَبَ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">صفحة 1 من 2 - نموذج (ج) - ثانوية الأمير عبدالمجيد</div>
+    </div>
+
+    <!-- الصفحة الثانية - نموذج (ج) -->
+    <div class="page">
+        <div>
+            <div class="section-title p2" style="margin-top: 0;">ثانوية الأمير عبدالمجيد 🏫 | الصفحة الثانية: الأسئلة (13 إلى 20) وجدول التظليل</div>
+            <table class="info-table p2">
+                <tr>
+                    <td style="width: 55%;"><strong>اسم الطالب:</strong> <span class="line">&nbsp;</span></td>
+                    <td style="width: 45%;"><strong>الصف والشعبة:</strong> <span class="line">&nbsp;</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-area">
+            <div class="two-columns">
+                <div class="column">
+                    <div class="q-box">
+                        <div class="q-title">13. "إنَّ وأخواتها" عند دخولها على الجملة الاسمية فإنها:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) تنصب المبتدأ وترفع الخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) ترفع المبتدأ وتنصب الخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) ترفع المبتدأ والخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) تجزم المبتدأ والخبر</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">14. الفعل المضارع المجزوم بـ (لم) بالسكون الصحيح هو:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) لم يسعَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) لم يكتبْ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) لم يدعُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) لم يقضِ</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">15. الفعل "يدعو" في جملة "لم يدعُ المسلمُ إلا اللهَ" مجزوم وعلامة جزمه:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) السكون</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) حذف حرف العلة (الواو)</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) حذف النون</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) الفتحة المقدرة</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">16. الضبط الصحيح لكلمة (الجو) في "إنَّ الجوَّ جميلٌ":</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) الجوُّ (بالضم)</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) الجوَّ (بالفتح)</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) الجوِّ (بالكسر)</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) الجوٌّ (بالتنوین)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="q-box">
+                        <div class="q-title">17. الفعل المضارع المرفوع بالضمة الظاهرة فيما يلي:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) لن يكتبَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) يكتبُ الطالبُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) لم يكتبْ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) يكتبون بجد</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">18. الجملة المبنية للمعلوم فيما يلي هي:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) كُتِبَ الدرسُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) فُتِحَ البابُ</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) حفظَ الطالبُ الدرسَ</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) كُوفِئَ المجتهدُ</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">19. من الأفعال الخمسة المرفوعة بثبوت النون:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) لن يدرسوا</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) لم يدرسوا</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) يدرسون</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) ادرسوا</div>
+                        </div>
+                    </div>
+                    <div class="q-box">
+                        <div class="q-title">20. "كان وأخواتها" عند دخولها على الجملة الاسمية فإنها:</div>
+                        <div class="options">
+                            <div class="option-item"><span class="circle-choice"></span>أ) تنصب المبتدأ وترفع الخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>ب) ترفع المبتدأ وتنصب الخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>ج) تنصب المبتدأ والخبر</div>
+                            <div class="option-item"><span class="circle-choice"></span>د) تجزم المبتدأ والخبر</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- جدول التظليل -->
+            <div class="bubble-card">
+                <div style="text-align: center; color: #065f46; font-weight: bold; font-size: 10pt; margin-bottom: 2px;">
+                    جدول تظليل إجابات الطالب (نموذج ج) - أ / عبدالعزيز الفيفي
+                </div>
+                <table class="bubble-table">
+                    <tr>
+                        <th>السؤال</th><th>أ</th><th>ب</th><th>ج</th><th>د</th>
+                        <th>السؤال</th><th>أ</th><th>ب</th><th>ج</th><th>د</th>
+                    </tr>
+                    <script>
+                        for(let i=1; i<=10; i++) {
+                            document.write(`<tr>
+                                <td>${i}</td><td><span class="bubble"></span></td><td><span class="bubble"></span></td><td><span class="bubble"></span></td><td><span class="bubble"></span></td>
+                                <td>${i+10}</td><td><span class="bubble"></span></td><td><span class="bubble"></span></td><td><span class="bubble"></span></td><td><span class="bubble"></span></td>
+                            </tr>`);
+                        }
+                    </script>
+                </table>
+            </div>
+        </div>
+        <div class="footer-bar">صفحة 2 من 2 - نموذج (ج) - ثانوية الأمير عبدالمجيد - إعداد: أ/ عبدالعزيز الفيفي 🎓</div>
+    </div>
+
+</body>
+</html>
